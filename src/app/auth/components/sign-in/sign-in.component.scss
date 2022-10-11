@@ -1,0 +1,38 @@
+.sign-up {
+    display: block;
+    min-height: 100vh;
+}
+
+.sign-up-form {
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    mat-card-title {
+        text-align: center;
+    }
+    padding: 1em;
+
+    form {
+        .field {
+            padding: 15px;
+            width: 100%;
+        }
+
+        button {
+            display: block;
+            width: 30%;
+            height: 40px;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+::ng-deep .dialog {
+    margin: 5px auto auto auto;
+    .mat-dialog-container {
+        background-color: orange;
+    }
+}
