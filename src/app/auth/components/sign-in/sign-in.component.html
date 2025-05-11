@@ -1,0 +1,18 @@
+<div class="sign-up">
+    <mat-card class="sign-up-form">
+        <mat-card-title>Sign In</mat-card-title>
+        <form [formGroup]="form" >
+            <mat-form-field class="field" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" value="" formControlName="email">
+            </mat-form-field>
+            <mat-form-field class="field" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="password">
+            </mat-form-field>
+
+            <button mat-flat-button color="accent" (click)="sendInfo()">Sign in</button>
+            <button mat-button color="accent" (click)="navigateToSignUp()">Sign up</button>
+        </form>
+    </mat-card>
+</div>
